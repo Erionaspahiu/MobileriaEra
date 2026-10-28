@@ -139,8 +139,17 @@
       'Telefoni: ' + form.elements.phone.value.trim() + '\n' +
       'Interesimi: ' + form.elements.interest.value +
       (form.elements.message.value.trim() ? '\nMesazhi: ' + form.elements.message.value.trim() : '');
-    window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
-    note.textContent = 'Faleminderit! Po hapet WhatsApp për të dërguar mesazhin.';
+
+    var via = (e.submitter && e.submitter.value) || 'whatsapp';
+    if (via === 'viber') {
+      // Viber fills the draft on most devices; the clipboard copy is a fallback for the rest
+      if (navigator.clipboard) navigator.clipboard.writeText(text).catch(function () {});
+      window.location.href = 'viber://chat?number=%2B' + PHONE + '&draft=' + encodeURIComponent(text);
+      note.textContent = 'Po hapet Viber. Nëse mesazhi nuk shfaqet, ai është kopjuar — thjesht ngjiteni (paste) dhe dërgojeni.';
+    } else {
+      window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+      note.textContent = 'Faleminderit! Po hapet WhatsApp për të dërguar mesazhin.';
+    }
     form.reset();
   });
 

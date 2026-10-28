@@ -22,9 +22,9 @@
 
       <nav class="nav" id="nav" aria-label="Navigimi kryesor">
         <a href="#rreth">Rreth nesh</a>
+        <a href="#te-vecanta">Të veçanta</a>
         <a href="#koleksioni">Koleksioni</a>
         <a href="#punimet">Punimet</a>
-        <a href="#procesi">Procesi</a>
         <a href="#kontakti">Kontakti</a>
         <a href="tel:+38344274038" class="btn btn--outline nav__cta">+383 44 274 038</a>
       </nav>
@@ -48,10 +48,10 @@
         </div>
       </div>
       <div class="hero__media">
-        <img src="images/kitchen-led.jpg" alt="Kuzhinë moderne me ndriçim LED dhe panele druri" fetchpriority="high">
+        <img src="images/kitchen-green.jpg" alt="Kuzhinë e gjelbër mat me pllakë mermeri dhe vitrinë të ndriçuar" fetchpriority="high">
         <div class="hero__badge">
           <span class="hero__badge-label">Projekt i realizuar</span>
-          <span class="hero__badge-title">Kuzhinë me ndriçim LED</span>
+          <span class="hero__badge-title">Kuzhinë e gjelbër me mermer</span>
         </div>
       </div>
       <a href="#rreth" class="hero__scroll" aria-label="Lëviz poshtë"><span></span></a>
@@ -88,6 +88,67 @@
       </div>
     </section>
 
+    <!-- ============ SHOWCASE ============ -->
+    <section class="section showcase" id="te-vecanta">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="eyebrow reveal">Të veçanta</p>
+          <h2 class="title reveal">Projekte <em>që flasin vetë</em></h2>
+        </div>
+
+        <article class="feature">
+          <div class="feature__media reveal">
+            <img src="images/bedroom-led.jpg" alt="Dhomë gjumi me shtrat të tapicuar, panele muri dhe ndriçim LED" loading="lazy">
+          </div>
+          <div class="feature__text">
+            <span class="feature__num reveal">01</span>
+            <p class="feature__tag reveal">Dhomë gjumi</p>
+            <h3 class="reveal">Qetësi e ndriçuar <em>me kujdes</em></h3>
+            <p class="reveal">Shtrat i tapicuar me kokë me panele, mur me lamela dhe ndriçim LED i integruar — një dhomë e krijuar për pushim të plotë.</p>
+            <ul class="feature__details reveal">
+              <li>Tapiceri e butë</li>
+              <li>Panele &amp; lamela muri</li>
+              <li>Ndriçim LED i integruar</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature--reverse">
+          <div class="feature__media reveal">
+            <img src="images/kitchen-green-angle.jpg" alt="Kuzhinë e gjelbër mat me vitrinë xhami të ndriçuar" loading="lazy">
+          </div>
+          <div class="feature__text">
+            <span class="feature__num reveal">02</span>
+            <p class="feature__tag reveal">Kuzhinë</p>
+            <h3 class="reveal">E gjelbër, <em>e guximshme</em></h3>
+            <p class="reveal">Fronte mat në të gjelbër të thellë, pllakë me motiv mermeri dhe vitrinë xhami me ndriçim të brendshëm që e kthen kuzhinën në pikën qendrore të shtëpisë.</p>
+            <ul class="feature__details reveal">
+              <li>Fronte mat pa doreza</li>
+              <li>Motiv mermeri</li>
+              <li>Vitrinë me LED</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature__media reveal">
+            <img src="images/kitchen-anthracite.jpg" alt="Kuzhinë antracit me pllakë guri të errët në dritën e diellit" loading="lazy">
+          </div>
+          <div class="feature__text">
+            <span class="feature__num reveal">03</span>
+            <p class="feature__tag reveal">Kuzhinë</p>
+            <h3 class="reveal">Minimalizëm <em>në antracit</em></h3>
+            <p class="reveal">Linja të pastra, ngjyrë antracit dhe pllakë guri e errët — elegancë e qetë që merr jetë me dritën e ditës.</p>
+            <ul class="feature__details reveal">
+              <li>Fronte mat antracit</li>
+              <li>Pllakë me motiv guri</li>
+              <li>Pajisje të integruara</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- ============ COLLECTIONS ============ -->
     <section class="section collections" id="koleksioni">
       <div class="container">
@@ -114,7 +175,7 @@
             </div>
           </a>
           <a href="#punimet" data-goto="gjumi" class="card reveal">
-            <img src="images/bedroom.jpg" alt="Dhomë gjumi me shtrat të tapicuar dhe dollapë" loading="lazy">
+            <img src="images/bedroom-led.jpg" alt="Dhomë gjumi me shtrat të tapicuar dhe ndriçim LED" loading="lazy">
             <div class="card__body">
               <span class="card__tag">Dhoma gjumi</span>
               <h3>Qetësi, stil dhe komoditet</h3>
@@ -122,7 +183,7 @@
             </div>
           </a>
           <a href="#punimet" data-goto="ndenje" class="card reveal">
-            <img src="images/tv-wall.jpg" alt="Komodë televizori me panele druri vertikale" loading="lazy">
+            <img src="images/living-tv.jpg" alt="Komodë televizori e varur me lamela druri" loading="lazy">
             <div class="card__body">
               <span class="card__tag">Komodë televizori</span>
               <h3>Dizajn modern për eksperiencë perfekte</h3>
@@ -170,23 +231,43 @@
         </div>
 
         <div class="gallery" id="gallery">
-          <figure class="gallery__item" data-cat="kuzhina">
+          <figure class="gallery__item gallery__item--big" data-cat="kuzhina">
+            <img src="images/kitchen-green-angle.jpg" alt="Kuzhinë e gjelbër mat me vitrinë të ndriçuar" loading="lazy">
+            <figcaption><span>Kuzhinë</span>Kuzhinë e gjelbër me mermer</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall" data-cat="gjumi">
+            <img src="images/bedroom-led.jpg" alt="Dhomë gjumi me shtrat të tapicuar dhe ndriçim LED" loading="lazy">
+            <figcaption><span>Dhomë gjumi</span>Ndriçim ambiental dhe tapiceri e butë</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall" data-cat="kuzhina">
+            <img src="images/kitchen-anthracite.jpg" alt="Kuzhinë antracit me pllakë guri të errët" loading="lazy">
+            <figcaption><span>Kuzhinë</span>Elegancë minimaliste në antracit</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide" data-cat="kuzhina">
             <img src="images/kitchen-led.jpg" alt="Kuzhinë me ndriçim LED" loading="lazy">
             <figcaption><span>Kuzhinë</span>Dritë e ngrohtë, linja të pastra</figcaption>
           </figure>
-          <figure class="gallery__item" data-cat="hyrje">
-            <img src="images/hallway.jpg" alt="Garderobë hyrjeje" loading="lazy">
-            <figcaption><span>Hyrje &amp; garderobë</span>Rregull dhe stil që në hyrje</figcaption>
+          <figure class="gallery__item gallery__item--tall" data-cat="ndenje">
+            <img src="images/living-tv.jpg" alt="Komodë televizori e varur me lamela druri" loading="lazy">
+            <figcaption><span>Dhomë ndenjeje</span>Komodë e varur me lamela druri</figcaption>
           </figure>
-          <figure class="gallery__item" data-cat="kuzhina">
-            <img src="images/kitchen-marble.jpg" alt="Kuzhinë krem me mermer" loading="lazy">
-            <figcaption><span>Kuzhinë</span>Mermer dhe shkëlqim në harmoni</figcaption>
+          <figure class="gallery__item gallery__item--tall" data-cat="gjumi">
+            <img src="images/bed-grey.jpg" alt="Shtrat i tapicuar në ngjyrë gri" loading="lazy">
+            <figcaption><span>Dhomë gjumi</span>Shtrat i tapicuar me linja të buta</figcaption>
           </figure>
-          <figure class="gallery__item" data-cat="kuzhina">
+          <figure class="gallery__item gallery__item--wide" data-cat="kuzhina">
             <img src="images/kitchen-white-l.jpg" alt="Kuzhinë e bardhë në formë L" loading="lazy">
             <figcaption><span>Kuzhinë</span>Modernitet dhe ngrohtësi — zemra e çdo shtëpie</figcaption>
           </figure>
-          <figure class="gallery__item" data-cat="hyrje">
+          <figure class="gallery__item gallery__item--tall" data-cat="hyrje">
+            <img src="images/hallway.jpg" alt="Garderobë hyrjeje" loading="lazy">
+            <figcaption><span>Hyrje &amp; garderobë</span>Rregull dhe stil që në hyrje</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide" data-cat="kuzhina">
+            <img src="images/kitchen-marble.jpg" alt="Kuzhinë krem me mermer" loading="lazy">
+            <figcaption><span>Kuzhinë</span>Mermer dhe shkëlqim në harmoni</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall" data-cat="hyrje">
             <img src="images/hallway-front.jpg" alt="Garderobë me dyer druri dhe ulëse" loading="lazy">
             <figcaption><span>Hyrje &amp; garderobë</span>Hapësirë e organizuar me elegancë</figcaption>
           </figure>
@@ -194,37 +275,21 @@
             <img src="images/kitchen-island.jpg" alt="Kuzhinë me ishull" loading="lazy">
             <figcaption><span>Kuzhinë</span>Elegancë dhe inovacion për çdo hapësirë</figcaption>
           </figure>
-          <figure class="gallery__item" data-cat="gjumi">
-            <img src="images/bedroom.jpg" alt="Dhomë gjumi" loading="lazy">
-            <figcaption><span>Dhomë gjumi</span>Qetësi, stil dhe komoditet</figcaption>
-          </figure>
-          <figure class="gallery__item" data-cat="kuzhina">
-            <img src="images/kitchen-gloss.jpg" alt="Kuzhinë e bardhë me shkëlqim" loading="lazy">
-            <figcaption><span>Kuzhinë</span>Vitrinë xhami dhe raft i hapur</figcaption>
-          </figure>
-          <figure class="gallery__item" data-cat="ndenje">
-            <img src="images/tv-wall.jpg" alt="Komodë televizori" loading="lazy">
-            <figcaption><span>Komodë televizori</span>Dizajn modern për eksperiencë perfekte</figcaption>
-          </figure>
-          <figure class="gallery__item" data-cat="kuzhina">
-            <img src="images/kitchen-linear.jpg" alt="Kuzhinë lineare me vitrinë të errët" loading="lazy">
-            <figcaption><span>Kuzhinë</span>Ndërtuar për stil dhe qëndrueshmëri</figcaption>
-          </figure>
           <figure class="gallery__item" data-cat="ngrenie">
             <img src="images/dining.jpg" alt="Tavolinë buke" loading="lazy">
             <figcaption><span>Tavolinë buke</span>Baza e fortë e çdo vakti të paharrueshëm</figcaption>
           </figure>
-          <figure class="gallery__item" data-cat="kuzhina">
-            <img src="images/kitchen-walnut.jpg" alt="Kuzhinë e bardhë me pllakë druri" loading="lazy">
-            <figcaption><span>Kuzhinë</span>Kualitet, elegancë dhe rezistencë</figcaption>
+          <figure class="gallery__item" data-cat="ndenje">
+            <img src="images/tv-wall.jpg" alt="Komodë televizori me panele druri" loading="lazy">
+            <figcaption><span>Komodë televizori</span>Dizajn modern për eksperiencë perfekte</figcaption>
+          </figure>
+          <figure class="gallery__item" data-cat="gjumi">
+            <img src="images/bedroom.jpg" alt="Dhomë gjumi me dollapë" loading="lazy">
+            <figcaption><span>Dhomë gjumi</span>Qetësi, stil dhe komoditet</figcaption>
           </figure>
           <figure class="gallery__item" data-cat="kuzhina">
             <img src="images/kitchen-oak.jpg" alt="Kuzhinë në formë L" loading="lazy">
             <figcaption><span>Kuzhinë</span>Dizajn modern për shije perfekte</figcaption>
-          </figure>
-          <figure class="gallery__item" data-cat="kuzhina">
-            <img src="images/kitchen-shelf.jpg" alt="Kuzhinë me raft dekorativ druri" loading="lazy">
-            <figcaption><span>Kuzhinë</span>Funksionalitet dhe stil në çdo detaj</figcaption>
           </figure>
         </div>
       </div>
@@ -277,7 +342,11 @@
             </li>
             <li class="reveal">
               <span class="contact__label">WhatsApp / Viber</span>
-              <a href="https://wa.me/38344274038" target="_blank" rel="noopener">Na shkruani një mesazh</a>
+              <span class="contact__links">
+                <a href="https://wa.me/38344274038" target="_blank" rel="noopener">WhatsApp</a>
+                <span aria-hidden="true">·</span>
+                <a href="viber://chat?number=%2B38344274038">Viber</a>
+              </span>
             </li>
             <li class="reveal">
               <span class="contact__label">Lokacioni</span>
@@ -317,7 +386,11 @@
             <span>Mesazhi</span>
             <textarea name="message" rows="4" placeholder="Përshkruani shkurt projektin tuaj…"></textarea>
           </label>
-          <button type="submit" class="btn btn--solid btn--block">Dërgo përmes WhatsApp</button>
+          <p class="form__send-label">Dërgo kërkesën përmes:</p>
+          <div class="form__actions">
+            <button type="submit" name="via" value="whatsapp" class="btn btn--solid btn--wa">WhatsApp</button>
+            <button type="submit" name="via" value="viber" class="btn btn--solid btn--viber">Viber</button>
+          </div>
           <p class="form__note" id="formNote" role="status"></p>
         </form>
       </div>
